@@ -16,7 +16,7 @@ pipeline {
         }
         stage("Aqua Scan") {
             steps {
-                aqua customFlags: '', hideBase: false, hostedImage: '', localImage: '', locationType: 'local', notCompliesCmd: '', onDisallowed: 'ignore', policies: '', register: true, registry: 'registry.aquasec.com/scanner:6.2', showNegligible: true, tarFilePath: ''       
+                aqua customFlags: '', hideBase: false, hostedImage: 'nginx:latest', localImage: '', locationType: 'local', notCompliesCmd: '', onDisallowed: 'ignore', policies: '', register: true, registry: 'registry.aquasec.com/scanner:6.2', showNegligible: true, tarFilePath: ''
             }
         }
     }
